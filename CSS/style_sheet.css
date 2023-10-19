@@ -1,0 +1,494 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(255, 238, 127);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+
+
+header {
+    background-color: rgb(33, 33, 33);
+    text-decoration: none;
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+
+
+#menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: end;
+    gap: 2.2rem;
+}
+
+#menu a {
+    text-decoration: none;
+    color: white;
+}
+
+#menu a:hover {
+    color: rgb(203, 203, 203);
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.459)),url(../images/shutterstock-252338818.jpg);
+    min-height: 5rem;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 6.3rem;
+    object-fit: contain;
+    padding-bottom: 5rem;
+}
+
+.hero h1, .hero p {
+    margin-bottom: 4rem;
+    align-self: center;
+    text-align: center;
+    background-color: rgba(43, 226, 226, 0.725);
+    color: white;
+    padding: 1.5rem;
+}
+
+h1 {
+    font-size: 95px;
+}
+
+.hero p {
+    font-size: 25px;
+}
+
+#gallery {
+    background-color: aqua;
+    color: rgb(251, 58, 123);
+    text-align: center;
+    padding: 2rem 0;
+}
+
+#gallery img  {
+    width: 22.5rem;
+    height: 14rem;
+    object-fit: contain;
+}
+
+footer {
+    padding-bottom: 2rem;
+    background-color: rgb(33, 33, 33);
+    text-decoration: none;
+}
+
+#features {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+#features img {
+    width: 24rem;
+    height: auto;
+    object-fit: contain;
+}
+
+#features p {
+    padding: 0 14.5rem;
+}
+
+#features li {
+    list-style-type: none;
+}
+
+#features ul {
+    margin-right: 3.1rem;
+}
+
+#subscribe h4, #subscribe p {
+    margin-left: 1.4rem;
+}
+
+.flex-container {
+    display: flex;
+    gap: 1.1rem;
+    flex-wrap: wrap;
+    padding: 0.6rem;
+
+}
+
+.flex-container div {
+    flex: 1;
+    padding: 1rem;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.flex-container a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 2.3rem 4.7rem;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 5.3rem;
+    row-gap: 1rem;
+}
+
+.flex-container-two {
+    display: flex;
+    gap: 0.7rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0.8rem;
+    text-align: center;
+}
+
+.flex-container-two div {
+    padding: 0.6rem;
+    flex-direction: row;
+    text-align: left;
+    margin-top: 1.2rem;
+}
+
+input {
+    padding: 0.6rem 1.5rem;
+    margin-bottom: 0.7rem;
+}
+
+#subscribe button {
+    padding: 0.7rem 1.3rem;
+    margin-left: 1.4rem;
+    font-size: 15px;
+    background-color: white;
+    border-radius: 5px;
+    border: black 1px solid;
+    text-decoration: none;
+}
+
+#subscribe button:hover {
+    background-color: rgb(203, 203, 203);
+}
+
+#subscribe {
+    padding-bottom: 2rem;
+}
+
+#subscribe a {
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.flex-container img {
+    width: 30px;
+    height: 30px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3,
+h4,
+h5 {
+    font-size: 30px;
+}
+
+h6 {
+    font-size: 25px;
+}
+
+p {
+    font-size:20px;
+}
+
+/* Phone Screens */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        margin-left: 2.3rem;
+    }
+
+    #gallery img  {
+        width: 25rem;
+        height: 13.5rem;
+    }
+
+    #menu-toggle {
+        display:inline-block;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    header {
+        padding-bottom: 0.8rem;
+    }
+
+    button {
+        margin: 0.6rem 0 0 0.7rem;
+        padding: 0.5rem 1rem;
+        font-size: 25px;
+        border-radius: 5px;
+    }
+
+    #features p {
+        padding: 0 3rem;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .flex-container-two {
+        flex-direction: column;
+    }
+
+    #subscribe {
+        text-align: center;
+        align-items: center;
+    }
+
+    #subscribe h4, #subscribe p {
+        margin-right: 1rem;
+    }
+
+    #subscribe button {
+        margin-right: 1rem;
+    }
+
+    #menu-toggle {
+        display: block;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+
+    #menu-toggle a:hover {
+        background-color: rgb(203, 203, 203);
+    }
+
+    #menu.active {
+        display: flex;
+    }
+
+    #menu {
+        position: absolute;
+        flex-direction: column;
+        background-color: white;
+        padding: 1rem;
+    }
+
+    #menu a {
+        color: rgb(33, 33, 33);
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    input {
+        padding: 1.2rem 3.7rem;
+        margin-bottom: 0.8rem;
+        border: 1px solid black;
+        border-radius: 7px;
+        font-size: 30px;
+    }
+    
+    #subscribe button {
+        padding: 1.4rem 3.8rem;
+        margin-left: 1.5rem;
+        font-size: 30px;
+    }
+
+    h3,
+    h4,
+    h5 {
+        font-size: 40px;
+    }
+
+    .flex-container a {
+        padding: 2.1rem 3.5rem;
+        font-size: 20px;
+    }
+
+    footer .flex-container {
+        gap: 1rem;
+    }
+
+    footer {
+        padding-top: 0.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+.flex-container img {
+    width: 40px;
+    height: 40px;
+}
+
+label {
+    font-size: 22px;
+}
+
+}
+
+/* Tablet Screens */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-left: 2rem;
+    }
+    
+    #gallery img {
+        width: 20rem;
+        height: 15rem;
+    }
+    
+    #features p {
+        padding: 0rem 3rem;
+    }
+
+    header {
+        padding: 1rem;
+    }
+
+    input {
+        padding: 1rem 2rem;
+        font-size: 30px;
+    }
+
+    #subscribe button {
+        padding: 1.5rem 3.5rem;
+        margin-left: 1.4rem;
+        font-size: 30px;
+    }
+
+    footer .flex-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        flex: 1;
+        padding-bottom: 2rem;
+    }
+
+    .flex-container a {
+        padding: 2.5rem 5.5rem;
+        font-size: 20px;
+    }
+
+    .flex-container img {
+        width: 50px;
+        height: 50px;
+    }
+
+    label {
+        font-size: 25px;
+    }
+
+}
+
+/* Small Desktop screens */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    header {
+        padding: 1rem;      
+    }
+
+    #menu {
+        font-size: 20px;
+        gap: 3rem;
+    }
+
+    #features img {
+        width: 30rem;
+        height: 20rem;
+    }
+
+    #gallery img  {
+        width: 17rem;
+        height: 13rem;
+    }
+
+    .grid-container {
+        gap: 1rem;
+        margin-right: 5rem;
+    }
+
+    .flex-container a {
+        padding: 2rem 2.2rem;
+        font-size: 20px;
+    }
+
+    footer {
+        padding: 2rem 0rem 4rem;
+    }
+
+    h1 {
+        font-size: 120px;
+    }
+
+    .hero p {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 25px;
+    }
+
+h3,
+h4,
+h5 {
+    font-size: 45px;
+}
+
+h6 {
+    font-size: 35px;
+}
+
+#features {
+    padding-bottom: 2.5rem;
+}
+
+#features p {
+    padding: 0 7rem;
+}
+
+#gallery {
+    padding-bottom: 2.5rem;
+}
+
+input {
+    padding: 0.6rem 1.3rem;
+    border: 1px solid black;
+    border-radius: 7px;
+    font-size: 35px;
+}
+
+label {
+    font-size: 30px;
+}
+
+#subscribe button {
+    padding: 0.5rem 2rem;
+    margin-left: 1.6rem;
+    font-size: 20px;
+}
+
+}
